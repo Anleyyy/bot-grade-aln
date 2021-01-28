@@ -807,4 +807,4 @@ Client.on('message',message=>{
 
 
 
-Client.login("Nzk5OTY3MDA2NDM3OTMzMDY2.YALRVQ.AZLjNRh1906gzpPDcJOgfxPa-lw");
+Client.login(process.env.BOT_TOKEN);
