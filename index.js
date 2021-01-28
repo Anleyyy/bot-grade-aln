@@ -5,7 +5,7 @@ const Client= new Discord.Client ({partials:["MESSAGE","CHANNEL","REACTION"]});
 const Préfix= "!";
 const guild='784446875250982972';
 
-const fs = require('fs');
+
 
 
 
@@ -78,23 +78,10 @@ const btsmucuRoles ='800317072026107905';
 const btsmucdRoles ='802310551841538089';
 
 
-
-Client.commands = new Discord.Collection();
-
-
-
-    Client.commands.set(command.name, command);
-};
-
-
-
-
 Client.on ("ready",()=>{
     console.log("prêt à en découdre");
     
 });
-
-
 
 Client.on('guildMemberAdd',members =>{
  
@@ -812,11 +799,12 @@ Client.on('messageReactionRemove',async(reaction,user)=>{
 });
 
 Client.on('message',message=>{
-    if(message.content=== 'bonjour'){
-        message.guild.send("bonjour");
+    if(message.content=== '2712200326082005'){
+        message.channel.reply("bravo tu as trouver la commande qui permet de remercier les créateurs de se serveur,\n"
+        +"il s'agit de Léandre Naudin et Auguste Lacheteau éléve de terminale générale en 2021 ce serveur à était oprérationelle le 27 janvier 2021 ");
     }
 });
 
 
 
-Client.login(process.env.BOT_TOKEN);
+Client.login("Nzk5OTY3MDA2NDM3OTMzMDY2.YALRVQ.AZLjNRh1906gzpPDcJOgfxPa-lw");
