@@ -1,1 +1,1 @@
-web: node www/main.js
+Worker: node index.js
